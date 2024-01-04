@@ -29,7 +29,10 @@ android {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
     }
-    buildFeatures {
+    dataBinding{
+        enable = true
+    }
+    buildFeatures{
         viewBinding = true
     }
 }
@@ -45,6 +48,14 @@ dependencies {
     // ViewModel and LiveData
     implementation ("android.arch.lifecycle:extensions:1.1.1")
     annotationProcessor ("android.arch.lifecycle:compiler:1.1.1")
+
+    /*val lifecycle_version = "2.6.2"
+    // ViewModel
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version")
+    // LiveData
+    implementation("androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version")
+    // Annotation processor
+    annotationProcessor("androidx.lifecycle:lifecycle-compiler:$lifecycle_version")*/
 
     implementation ("android.arch.persistence.room:runtime:1.1.1")
     annotationProcessor ("android.arch.persistence.room:compiler:1.1.1")

@@ -2,7 +2,8 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.EBookShop" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+         <item name="colorPrimary">@color/material_dynamic_primary50</item>
+         <item name="colorPrimaryDark">@color/material_dynamic_primary40</item>
     </style>
 
     <style name="Theme.EBookShop" parent="Base.Theme.EBookShop" />
